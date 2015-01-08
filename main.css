@@ -1,0 +1,493 @@
+body {
+	font-family: HelveticaNeue, sans-serif;
+	color: #000000;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.project,
+.footer {
+	max-width: 1040px;
+	margin: auto;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+}
+
+
+/*Navigation Bar*/
+
+.nav-bar {
+	display: -webkit-flex;
+	display: flex;
+	height: 5em;
+	background-color: #F9F9F9;	
+	border-bottom: 1px solid #E9E9E9;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	padding-left: 2em;
+	color: #979797;
+}
+
+.nav-bar a,
+.search-box input {
+	font-weight: normal;
+}
+
+
+.site-logo h1{
+	display: block;
+	width: 170px;
+	height: 42px;
+	background-image: url(logo.png);
+	font-size: 0;
+	margin-left: 20px;
+}
+
+.search-box {
+	width: 300px;
+	position: relative;
+}
+
+.search-box input {
+	width: 300px;
+	height: 40px;
+	border: none;
+	font-size: 14px;
+	padding-left: 2em;
+	outline: none;	
+}
+
+.search-box .fa-search{
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+
+li.see-projects a,
+li.start-project a,
+li.dropdown > a{
+	display: block;
+	height: 70px;
+	padding: 25px 10px 0 10px;
+}
+
+ul.nav-bar a:hover {
+background-color: #F1F1F1;
+	
+}
+
+.user-menu > a::before {
+	content:"";
+	display: block;
+	background: url('my_profile_icon.png') no-repeat;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-right: 5px;
+}
+
+.fa-caret-down{
+	margin-left: 5px;
+}
+
+.dropdown a:focus{
+	background-color: white;
+}
+
+.dropdown-menu {
+	-webkit-border-radius: 0px;
+	border: none;
+	-webkit-box-shadow: 0px 1px 2px #9B9B9B;;
+}
+
+.dropdown-menu li a{
+	height: 50px;
+	padding-top: 15px;
+	margin: -5px 0;
+}
+
+/*Project Hero*/
+.project-header {
+	display: block;
+	text-align: center;
+}
+
+.fa-map-marker {
+	margin-right: 5px;
+}
+
+.project-hero::after,
+#details::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.project-main-info,
+.project-details,
+.project-updates,
+.project-donors {
+	width: 600px;
+	margin: 2em;
+}
+
+.project-header p{
+	display: inline;
+	margin-left: 10px;
+}
+
+.arrow-up{
+	width: 0;
+	height: 0;
+	border-left: 25px solid rgba(0, 0, 0, 0);
+	border-right: 25px solid rgba(0, 0, 0, 0);
+	border-bottom: 25px solid #F1F1F1;
+	margin-left: 1.5em;
+}
+
+.teacher-info h4::before{
+	content: "";
+	display: block;
+	background-image: url('teacher_icon.png');
+	width: 82px;
+	height: 82px;
+	float: left;
+	margin-right: 10px;
+}
+
+.teacher-info h4{
+	padding-top: 10px;
+}
+
+.teacher-info {
+	display: -webkit-flex;
+	-webkit-align-items: center;
+}
+
+.teacher-info p:first-of-type {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: -90px;
+}
+
+.teacher-info ul {
+	margin-left: 3em;
+	border-left: 1px solid #D8D8D8;
+	padding-left: 2em;
+	color: #979797;
+	line-height: 24px;
+}
+
+.teacher-info ul a {
+	color: #979797;
+}
+
+.project-tagline p {
+	font-family: HelveticaNeue;
+	font-size: 32px;
+	line-height: 38px;
+	background-color: #F1F1F1;
+	padding: 1em;
+	width: 600px;
+	-webkit-border-radius: 10px;
+}
+
+
+/*Project Summary*/
+
+.bar-graph {
+	height: 15px;
+	width: 100%;
+	background-color: #D8D8D8;
+}
+
+.bar-half-off {
+	height: 15px;
+	width: 50%;
+	background-color: #9B9B9B;
+	float: left;
+}
+
+.bar-donated {
+	height: 15px;
+	width: 20%;
+	background-color: #FF8B20;
+	float: left;
+}
+
+.project-stats > h3:nth-of-type(1){
+	margin-top: -15px;	
+	margin-bottom: 15px;
+}
+
+.project-stats > h3:nth-of-type(2){
+	float: left;	
+	margin-top: 10px;
+}
+
+.project-stats > h3:nth-of-type(3){
+	float: right;
+	margin-top: 10px;
+}
+
+.project-stats > p::before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.project-stats > p {
+	text-align: center;
+	color: #979797;
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+.project-summary > .donate{
+	border-top: 1px solid #D8D8D8;
+	padding: 1em 0;
+
+}
+
+form.donate > input{
+	width: 100%;
+	height: 50px;
+}
+
+input {
+	color: #979797;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.contribute-btn {
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	background-color: #FF8B20;
+	padding: 10px;
+	-webkit-transition: background 0.1s ease-in-out;
+	-webkit-border-radius: 5px;
+	margin-top: .5em;
+}
+
+.contribute-btn:hover {
+	background-color: #f57600;
+}
+
+.fa-heart,
+.fa-share-alt {
+	margin-right: 5px;
+}
+
+.project-actions li{
+	margin-top: 1.5em;
+	color: #FF8B20;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.project-actions li a:hover {
+	color: #f57600;
+}
+.project-actions li:nth-of-type(1){
+	float: left;	
+}
+
+.project-actions li:nth-of-type(2){
+	float: right;	
+}
+
+.project-half-off::before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.project-half-off {
+	border-top: 1px solid #D8D8D8;
+	margin: 3em 0 0 0;
+	padding: 2em 0;
+}
+
+.half-off-partner {
+	background-color: #F1F1F1;
+	height: 100px;
+	padding: 20px;
+}
+
+.half-off-partner :before {
+	content: "";
+	display: block;
+	background-image: url('partner_icon.png');
+	width: 62px;
+	height: 62px;
+	float: left;
+	margin-right: 10px;
+}
+
+.project-tags li{
+	font-weight: bold;
+	font-size: 14px;
+	color: #979797;
+	line-height: 24px;
+}
+
+
+.project-tags li:nth-of-type(even) {
+	position: absolute;
+	margin-left: 180px;
+	margin-top: -20px;
+}
+
+/* Project Nav */
+
+.project-nav ul {
+	display: -webkit-flex;
+	margin: 1em 3em;
+	height: 5em;
+	-webkit-align-items: center;
+	border-bottom: 1px solid #D8D8D8;
+	border-top: 1px solid #D8D8D8;
+}
+
+.project-nav p {
+	color: #979797;
+	margin-top: -30px;
+}
+
+.nav-updates p{
+	margin-left: 70px;
+}
+
+.nav-donors p{
+	margin-left: 60px;
+}
+
+.project-nav li a{
+	display: block;
+	height: 5em;
+	margin-right: 7em;
+	padding: 15px 20px;
+}
+
+.project-nav li.active a{
+	border-bottom: 5px solid #FF8B20;
+}
+
+
+/*Project Details*/
+.about-classroom h4:first-of-type,
+.project-details h4:first-of-type,
+.project-updates h4:first-of-type,
+.project-donors h4:first-of-type {
+	margin-top: 2em;
+}
+
+.about-classroom h4,
+.project-details h4,
+.project-updates h4,
+.project-donors h4 {
+	margin-top: 1.5em;
+}
+
+.about-classroom {
+	margin-top: 10px;
+}
+
+.about-classroom p {
+	line-height: 16px;
+}
+
+.update {
+	margin-bottom: 4em;
+}
+
+.project::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Donors Tab */
+
+.donor {
+	padding: 2em 0 1em 0;
+}
+
+.donor-icon img {
+	float: left;
+	height: 70px;
+	width: 70px;
+	-webkit-border-radius: 50px;
+}
+
+.donor-info {
+	width: 500px;
+	float: left;
+	margin-top: -10px;
+	margin-left: 2em;
+}
+
+h4.donor-amount {
+	float: right;
+	margin-top: -60px;
+}
+
+.donor-comment {
+	margin-left: 7em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #D8D8D8;
+	
+}
+
+
+
+/*  Footer */
+
+footer{	
+	background-color: #4A4A4A;
+}
+
+.footer {
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 3em;
+	margin-top: 4em;	
+	color: #979797;
+}
+
+footer li a,
+footer li a:hover {
+	font-weight: normal;
+}
+
+footer li a:hover {
+	color: #a8a8a8;
+}
+
